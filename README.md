@@ -11,31 +11,31 @@ application, configuration and run he application.
 
 * Ansible Installation
 
-  Use Homebrew to install ansible on a Mac. Open a Terminal and type:
-  $ brew update
-  $ brew install ansible
-  $ ansible --version
-  =>  ansible 2.4.2.0
+⋅⋅* Use Homebrew to install ansible on a Mac. Open a Terminal and type:
+⋅⋅⋅$ brew update
+⋅⋅⋅$ brew install ansible
+⋅⋅⋅$ ansible --version
+⋅⋅⋅=>  ansible 2.4.2.0
 
 * Requirements
-..* A freshly installed Debian Linux (Debian 8+)
-... Install sudo package
-... Install ssh package
-... Configure IP Address to static
-... Add user "deployer"
-... Configure visudo to use no password. (i.e NOPASSWORD=ALL)
+⋅⋅* A freshly installed Debian Linux (Debian 8+)
+⋅⋅⋅Install sudo package
+⋅⋅⋅Install ssh package
+⋅⋅⋅Configure IP Address to static
+⋅⋅⋅Add user "deployer"
+⋅⋅⋅Configure visudo to use no password. (i.e NOPASSWORD=ALL)
 
-..* A configured user in linux server (ie. "deployer")
+⋅⋅* A configured user in linux server (ie. "deployer")
 
-..* A public/private key for the "deployer" user
-... To generate a key, open a terminal in your MacOS and type:
-... $ ssh-keygen -t rsa -b 2048
-... Follow the instructions to create a key.
+⋅⋅* A public/private key for the "deployer" user
+⋅⋅⋅To generate a key, open a terminal in your MacOS and type:
+⋅⋅⋅$ ssh-keygen -t rsa -b 2048
+⋅⋅⋅Follow the instructions to create a key.
 
-..* Upload the public key to the Linux server.
-... To upload the key to the server:
-... $ ssh-copy-id deployer@<IP>
+⋅⋅* Upload the public key to the Linux server.
+⋅⋅⋅To upload the key to the server:
+⋅⋅⋅$ ssh-copy-id deployer@<IP>
 
-... Try to login to the server:
-... $ ssh deployer@<IP>
-... You should not be asked for a password
+⋅⋅⋅Try to login to the server:
+⋅⋅⋅$ ssh deployer@<IP>
+⋅⋅⋅You should not be asked for a password
