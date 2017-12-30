@@ -11,15 +11,15 @@ application, configuration and run he application.
 
 * Ansible Installation
 
-⋅⋅* Use Homebrew to install ansible on a Mac. Open a Terminal and type:
+Use Homebrew to install ansible on a Mac. Open a Terminal and type:
 
-⋅⋅⋅ $ brew update
+$ brew update
 
-⋅⋅⋅ $ brew install ansible
+$ brew install ansible
 
-⋅⋅⋅ $ ansible --version
+$ ansible --version
 
-⋅⋅⋅ =>  ansible 2.4.2.0
+=>  ansible 2.4.2.0
 
 * Requirements
 ⋅⋅* A freshly installed Debian Linux (Debian 8+)
