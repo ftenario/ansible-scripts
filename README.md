@@ -5,21 +5,17 @@ MacOS environment or you can use another Linux box to do your orchestration.
 The target server is running on a Linux server or a linux instance in a cloud.
 
 The purpose of this project is to automate the installation of server
-application, configuration and run he application.
+application, configuration and run the application.
 
 ### How do I get set up? ###
 
 * Ansible Installation
 
-Use Homebrew to install ansible on a Mac. Open a Terminal and type:
-
-$ brew update
-
-$ brew install ansible
-
-$ ansible --version
-
-=>  ansible 2.4.2.0
+  * Use Homebrew to install ansible on a Mac. Open a Terminal and type:
+  * $ brew update
+  * $ brew install ansible
+  * $ ansible --version
+  * =>  ansible 2.4.2.0
 
 * Requirements
 ⋅⋅* A freshly installed Debian Linux (Debian 8+)
