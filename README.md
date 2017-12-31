@@ -29,7 +29,7 @@ application, configuration and run the application.
 
   * A configured user in linux server (ie. "deployer")
     ```
-    login a root
+    login as root
     # adduser deployer sudo
     # visudo
     Add an entry in the sudoers file
@@ -54,3 +54,11 @@ application, configuration and run the application.
     $ ssh deployer@IP
     You should not be asked for a password
     ```
+* Run ansible
+  ```
+  $ ansible-playbook deploy.yml -vvvv -i dev
+
+  if all is good, you should get something like this:
+  PLAY RECAP *********************************************************************
+  192.168.1.190              : ok=2    changed=0    unreachable=0    failed=0  
+  ```
