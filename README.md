@@ -12,10 +12,12 @@ application, configuration and run the application.
 * Ansible Installation
 
   * Use Homebrew to install ansible on a Mac. Open a Terminal and type:
-  * $ brew update
-  * $ brew install ansible
-  * $ ansible --version
-  * =>  ansible 2.4.2.0
+  ```
+  $ brew update
+  $ brew install ansible
+  $ ansible --version
+  =>  ansible 2.4.2.0
+  ```
 
 * Requirements
   * A freshly installed Debian Linux (Debian 8+)
@@ -29,13 +31,19 @@ application, configuration and run the application.
 
   * A public/private key for the "deployer" user
     * To generate a key, open a terminal in your MacOS and type:
-    * $ ssh-keygen -t rsa -b 2048
+    ```
+    $ ssh-keygen -t rsa -b 2048
+    ```
     * Follow the instructions to create a key.
 
   * Upload the public key to the Linux server.
     * To upload the key to the server:
-    * $ ssh-copy-id deployer@IP
+    ```
+    $ ssh-copy-id deployer@IP
+    ```
 
     * Try to login to the server:
-    * $ ssh deployer@IP
-    > You should not be asked for a password
+    ```
+    $ ssh deployer@IP
+    You should not be asked for a password
+    ```
