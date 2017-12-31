@@ -1,0 +1,34 @@
+---
+- hosts: server
+  tasks:
+  - name: Install required packages
+    apt: pkg={{item}} state=installed update_cache=true
+    with_items:
+    - joe
+    - git
+    - screen
+    - strace
+    - htop
+    - ntop
+    - rsync
+    - sudo
+    - python-software-properties
+    - build-essential
+    - libxml2
+    - libxml2-dev
+    - libyaml-dev
+    - libxslt1-dev
+    - git-core
+    - redis-server
+    - curl
+    - wget
+    - mysql-server-5.5
+    - gcc
+    - g++
+    - make
+    - binutils
+    - docker
+    - erlang
+    - elixir 
+  user: deployer
+  sudo: yes

@@ -28,13 +28,20 @@ application, configuration and run the application.
     * Configure visudo to use no password. (i.e NOPASSWORD=ALL)
 
   * A configured user in linux server (ie. "deployer")
+    ```
+    login a root
+    # adduser deployer sudo
+    # visudo
+    Add an entry in the sudoers file
+    "%deployer ALL=(ALL) NOPASSWD: ALL"
+    ```
 
   * A public/private key for the "deployer" user
     * To generate a key, open a terminal in your MacOS and type:
     ```
     $ ssh-keygen -t rsa -b 2048
+    Follow the instructions to create a key.
     ```
-    * Follow the instructions to create a key.
 
   * Upload the public key to the Linux server.
     * To upload the key to the server:

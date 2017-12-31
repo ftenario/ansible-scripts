@@ -21,4 +21,4 @@ doc/app
 *.*~
 .DS_Store
 ._*
-
+deploy.retry
