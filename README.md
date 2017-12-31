@@ -34,8 +34,8 @@ application, configuration and run the application.
 
   * Upload the public key to the Linux server.
     * To upload the key to the server:
-    * $ ssh-copy-id deployer@<IP>
+    * $ ssh-copy-id deployer@IP
 
     * Try to login to the server:
-    * $ ssh deployer@<IP>
-    * You should not be asked for a password
+    * $ ssh deployer@IP
+      You should not be asked for a password
