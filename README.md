@@ -38,4 +38,4 @@ application, configuration and run the application.
 
     * Try to login to the server:
     * $ ssh deployer@IP
-      You should not be asked for a password
+      + You should not be asked for a password
