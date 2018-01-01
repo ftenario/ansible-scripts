@@ -27,8 +27,12 @@
     - g++
     - make
     - binutils
-    - docker
     - erlang
-    - elixir 
+    - elixir
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - gnupg2
+    - software-properties-common
   user: deployer
   sudo: yes
